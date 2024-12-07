@@ -61,6 +61,14 @@ router.get('/teacher/display' ,TeacherController.display)
 router.get('/teacher/create' ,TeacherController.create)
 
 
+//forget password
+
+router.post('/forgot_Password',FrontController.forgetPasswordVerify)
+router.get('/reset-password',FrontController.reset_Password)
+router.post('/reset_Password1',FrontController.reset_Password1)
+
+
+
 // module.exports= router 
 
 module.exports = router

@@ -2,6 +2,7 @@ const AdminModel = require("../../models/admin")
 const bcrypt = require('bcrypt')
 const jwt = require('jsonwebtoken')
 
+
 class AdminController {
 
     static dashboard = async(req, res) => {

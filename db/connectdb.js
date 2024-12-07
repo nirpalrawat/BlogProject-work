@@ -1,19 +1,21 @@
-const mongoose = require ('mongoose')
-const localurl = 'mongodb://127.0.0.1:27017/blogproject'
-const liveurl = 'mongodb+srv://ansh9754:ansh123@cluster0.a2zclkg.mongodb.net/BlogProject'
+const mongoose =require('mongoose')
 
 
-const connectDB =()=>{
-    return mongoose.connect(liveurl)
+const connectDb = () =>{
 
-    .then(()=>{
-        console.log("mongoose connected succefully")
+    return mongoose.connect('mongodb://127.0.0.1:27017/blogprojject')
+
+.then(()=>{
+
+    console.log(' nirpal connect db')
+
+})
+.catch((error)=>{
+
+    console.log(error)
+})
 
 
-    })
-    .catch((error)=>{
-        console.log(error)
-
-    })
 }
-module.exports = connectDB
+
+module.exports = connectDb

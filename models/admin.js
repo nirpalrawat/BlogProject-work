@@ -13,6 +13,7 @@ const AdminSchema = new mongoose.Schema({
         type:String,
         required:true,
      },
+     token:{type:String}
  },{timestamps:true})
 
  const AdminModel = mongoose.model('admin',AdminSchema)
