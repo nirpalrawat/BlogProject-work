@@ -7,7 +7,7 @@ const connectDb = () =>{
 
 .then(()=>{
 
-    console.log(' nirpal connect db')
+    console.log(' nirpal connect Db')
 
 })
 .catch((error)=>{
